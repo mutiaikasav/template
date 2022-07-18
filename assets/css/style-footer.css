@@ -132,7 +132,7 @@
     transition: 0.3s;
   }
   #footer .social-links a:hover {
-    background:  #1d7b49;
-    color: #fff;
+    background:  #ffd602;
+    color: #000;
     text-decoration: none;
   }
