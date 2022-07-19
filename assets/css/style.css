@@ -53,3 +53,41 @@ a {
     min-height: 500pt;
 	margin-bottom: 10px;
 }
+
+.not-found {
+	padding-top: 150px;
+	text-align: center;
+}
+.not-found h1 {
+	font-size: 190px;
+}
+.not-found h3 {
+	text-transform: uppercase;
+}
+.not-found a {
+	color: #034e2f;
+	text-decoration: none;
+}
+.not-found a:hover {
+	color: #ffd602;
+}
+
+@media (max-width: 767px) {
+	.not-found {
+		padding-top: 200px;
+	}
+    .not-found h1 {
+		font-size: 150px;
+	}
+	.not-found h3 {
+		font-size: 20px;
+		text-transform: uppercase;
+	}
+	.not-found a {
+		color: #034e2f;
+		text-decoration: none;
+	}
+	.not-found a:hover {
+		color: #ffd602;
+	}
+  }
