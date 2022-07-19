@@ -50,6 +50,6 @@ a {
 
 /* Content */
 .content {
-    min-height: 150px;
-	margin-bottom: 50px;
+    min-height: 500pt;
+	margin-bottom: 10px;
 }
