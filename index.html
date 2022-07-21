@@ -12,13 +12,25 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/style-navbar.css">
     <link rel="stylesheet" href="assets/css/style-banner.css">
+    <link rel="stylesheet" href="assets/css/style-index.css">
+    <link rel="stylesheet" href="assets/css/style-carousel.css">
+    <link rel="stylesheet" href="assets/css/style-galeri.css">
     <link rel="stylesheet" href="assets/css/style-footer.css">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.0/font/bootstrap-icons.css">
     <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 </head>
 <body>
+    
     <!-- Start Navbar -->
     <nav class="navbar navbar-default navbar-trans navbar-expand-lg fixed-top" id="myNav">
         <div class="container">
@@ -175,234 +187,379 @@
     
     <div class="container content">
       <!-- ======= Latest Properties Section ======= -->
-      <!-- <section class="section-property section-t8">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-              <div class="title-wrap d-flex justify-content-between">
-                <div class="title-box">
-                  <h2 class="title-a">Latest Properties</h2>
-                </div>
-                <div class="title-link">
-                  <a href="property-grid.html">All Property
-                    <span class="bi bi-chevron-right"></span>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div id="property-carousel" class="swiper">
-            <div class="swiper-wrapper">
-              <div class="carousel-item-b swiper-slide">
-                <div class="card-box-a card-shadow">
-                  <div class="img-box-a">
-                    <img src="assets/img/property-6.jpg" alt="" class="img-a img-fluid">
-                  </div>
-                  <div class="card-overlay">
-                    <div class="card-overlay-a-content">
-                      <div class="card-header-a">
-                        <h2 class="card-title-a">
-                          <a href="property-single.html">206 Mount
-                            <br /> Olive Road Two</a>
-                        </h2>
-                      </div>
-                      <div class="card-body-a">
-                        <div class="price-box d-flex">
-                          <span class="price-a">rent | $ 12.000</span>
-                        </div>
-                        <a href="#" class="link-a">Click here to view
-                          <span class="bi bi-chevron-right"></span>
-                        </a>
-                      </div>
-                      <div class="card-footer-a">
-                        <ul class="card-info d-flex justify-content-around">
-                          <li>
-                            <h4 class="card-info-title">Area</h4>
-                            <span>340m
-                              <sup>2</sup>
-                            </span>
-                          </li>
-                          <li>
-                            <h4 class="card-info-title">Beds</h4>
-                            <span>2</span>
-                          </li>
-                          <li>
-                            <h4 class="card-info-title">Baths</h4>
-                            <span>4</span>
-                          </li>
-                          <li>
-                            <h4 class="card-info-title">Garages</h4>
-                            <span>1</span>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="carousel-item-b swiper-slide">
-                <div class="card-box-a card-shadow">
-                  <div class="img-box-a">
-                    <img src="assets/img/property-3.jpg" alt="" class="img-a img-fluid">
-                  </div>
-                  <div class="card-overlay">
-                    <div class="card-overlay-a-content">
-                      <div class="card-header-a">
-                        <h2 class="card-title-a">
-                          <a href="property-single.html">157 West
-                            <br /> Central Park</a>
-                        </h2>
-                      </div>
-                      <div class="card-body-a">
-                        <div class="price-box d-flex">
-                          <span class="price-a">rent | $ 12.000</span>
-                        </div>
-                        <a href="property-single.html" class="link-a">Click here to view
-                          <span class="bi bi-chevron-right"></span>
-                        </a>
-                      </div>
-                      <div class="card-footer-a">
-                        <ul class="card-info d-flex justify-content-around">
-                          <li>
-                            <h4 class="card-info-title">Area</h4>
-                            <span>340m
-                              <sup>2</sup>
-                            </span>
-                          </li>
-                          <li>
-                            <h4 class="card-info-title">Beds</h4>
-                            <span>2</span>
-                          </li>
-                          <li>
-                            <h4 class="card-info-title">Baths</h4>
-                            <span>4</span>
-                          </li>
-                          <li>
-                            <h4 class="card-info-title">Garages</h4>
-                            <span>1</span>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="carousel-item-b swiper-slide">
-                <div class="card-box-a card-shadow">
-                  <div class="img-box-a">
-                    <img src="assets/img/property-7.jpg" alt="" class="img-a img-fluid">
-                  </div>
-                  <div class="card-overlay">
-                    <div class="card-overlay-a-content">
-                      <div class="card-header-a">
-                        <h2 class="card-title-a">
-                          <a href="property-single.html">245 Azabu
-                            <br /> Nishi Park let</a>
-                        </h2>
-                      </div>
-                      <div class="card-body-a">
-                        <div class="price-box d-flex">
-                          <span class="price-a">rent | $ 12.000</span>
-                        </div>
-                        <a href="property-single.html" class="link-a">Click here to view
-                          <span class="bi bi-chevron-right"></span>
-                        </a>
-                      </div>
-                      <div class="card-footer-a">
-                        <ul class="card-info d-flex justify-content-around">
-                          <li>
-                            <h4 class="card-info-title">Area</h4>
-                            <span>340m
-                              <sup>2</sup>
-                            </span>
-                          </li>
-                          <li>
-                            <h4 class="card-info-title">Beds</h4>
-                            <span>2</span>
-                          </li>
-                          <li>
-                            <h4 class="card-info-title">Baths</h4>
-                            <span>4</span>
-                          </li>
-                          <li>
-                            <h4 class="card-info-title">Garages</h4>
-                            <span>1</span>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="carousel-item-b swiper-slide">
-                <div class="card-box-a card-shadow">
-                  <div class="img-box-a">
-                    <img src="assets/img/property-10.jpg" alt="" class="img-a img-fluid">
-                  </div>
-                  <div class="card-overlay">
-                    <div class="card-overlay-a-content">
-                      <div class="card-header-a">
-                        <h2 class="card-title-a">
-                          <a href="property-single.html">204 Montal
-                            <br /> South Bela Two</a>
-                        </h2>
-                      </div>
-                      <div class="card-body-a">
-                        <div class="price-box d-flex">
-                          <span class="price-a">rent | $ 12.000</span>
-                        </div>
-                        <a href="property-single.html" class="link-a">Click here to view
-                          <span class="bi bi-chevron-right"></span>
-                        </a>
-                      </div>
-                      <div class="card-footer-a">
-                        <ul class="card-info d-flex justify-content-around">
-                          <li>
-                            <h4 class="card-info-title">Area</h4>
-                            <span>340m
-                              <sup>2</sup>
-                            </span>
-                          </li>
-                          <li>
-                            <h4 class="card-info-title">Beds</h4>
-                            <span>2</span>
-                          </li>
-                          <li>
-                            <h4 class="card-info-title">Baths</h4>
-                            <span>4</span>
-                          </li>
-                          <li>
-                            <h4 class="card-info-title">Garages</h4>
-                            <span>1</span>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="propery-carousel-pagination carousel-pagination"></div>
-        </div>
-      </section> -->
+      
       <!-- End Latest Properties Section -->
-
-        <img src="" alt="">
-        <h1>Home</h1>
-        <h2>Banner</h2>
-        <h2>Kabar Baznas Bazis</h2>
-        <h2>Program</h2>
+        <div class="widget">
+          <h2 class="widget-title">Kabar Baznas Bazis</h2>
+          <section class="section-property">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="title-wrap d-flex justify-content-between">
+                    <div class="title-link">
+                      <a href="property-grid.html">All Property
+                        <span class="bi bi-chevron-right"></span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+      
+              <div id="property-carousel" class="swiper">
+                <div class="swiper-wrapper">
+      
+                  <div class="carousel-item-b swiper-slide">
+                    <div class="card-box-a card-shadow">
+                      <div class="img-box-a">
+                        <img src="assets/img/DSC05194.JPG" alt="" class="img-a img-fluid">
+                      </div>
+                      <div class="card-overlay">
+                        <div class="card-overlay-a-content">
+                          <div class="card-header-a">
+                            <h2 class="card-title-a">
+                              <a href="property-single.html">206 Mount
+                                <br /> Olive Road Two</a>
+                            </h2>
+                          </div>
+                          <div class="card-body-a">
+                            <div class="price-box d-flex">
+                              <span class="price-a">rent | $ 12.000</span>
+                            </div>
+                            <a href="#" class="link-a">Click here to view
+                              <span class="bi bi-chevron-right"></span>
+                            </a>
+                          </div>
+                          <div class="card-footer-a">
+                            <ul class="card-info d-flex justify-content-around">
+                              <li>
+                                <h4 class="card-info-title">Area</h4>
+                                <span>340m
+                                  <sup>2</sup>
+                                </span>
+                              </li>
+                              <li>
+                                <h4 class="card-info-title">Beds</h4>
+                                <span>2</span>
+                              </li>
+                              <li>
+                                <h4 class="card-info-title">Baths</h4>
+                                <span>4</span>
+                              </li>
+                              <li>
+                                <h4 class="card-info-title">Garages</h4>
+                                <span>1</span>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div><!-- End carousel item -->
+      
+                  <div class="carousel-item-b swiper-slide">
+                    <div class="card-box-a card-shadow">
+                      <div class="img-box-a">
+                        <img src="assets/img/DSC05210.JPG" alt="" class="img-a img-fluid">
+                      </div>
+                      <div class="card-overlay">
+                        <div class="card-overlay-a-content">
+                          <div class="card-header-a">
+                            <h2 class="card-title-a">
+                              <a href="property-single.html">157 West
+                                <br /> Central Park</a>
+                            </h2>
+                          </div>
+                          <div class="card-body-a">
+                            <div class="price-box d-flex">
+                              <span class="price-a">rent | $ 12.000</span>
+                            </div>
+                            <a href="property-single.html" class="link-a">Click here to view
+                              <span class="bi bi-chevron-right"></span>
+                            </a>
+                          </div>
+                          <div class="card-footer-a">
+                            <ul class="card-info d-flex justify-content-around">
+                              <li>
+                                <h4 class="card-info-title">Area</h4>
+                                <span>340m
+                                  <sup>2</sup>
+                                </span>
+                              </li>
+                              <li>
+                                <h4 class="card-info-title">Beds</h4>
+                                <span>2</span>
+                              </li>
+                              <li>
+                                <h4 class="card-info-title">Baths</h4>
+                                <span>4</span>
+                              </li>
+                              <li>
+                                <h4 class="card-info-title">Garages</h4>
+                                <span>1</span>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div><!-- End carousel item -->
+      
+                  <div class="carousel-item-b swiper-slide">
+                    <div class="card-box-a card-shadow">
+                      <div class="img-box-a">
+                        <img src="assets/img/DSC05241.JPG" alt="" class="img-a img-fluid">
+                      </div>
+                      <div class="card-overlay">
+                        <div class="card-overlay-a-content">
+                          <div class="card-header-a">
+                            <h2 class="card-title-a">
+                              <a href="property-single.html">245 Azabu
+                                <br /> Nishi Park let</a>
+                            </h2>
+                          </div>
+                          <div class="card-body-a">
+                            <div class="price-box d-flex">
+                              <span class="price-a">rent | $ 12.000</span>
+                            </div>
+                            <a href="property-single.html" class="link-a">Click here to view
+                              <span class="bi bi-chevron-right"></span>
+                            </a>
+                          </div>
+                          <div class="card-footer-a">
+                            <ul class="card-info d-flex justify-content-around">
+                              <li>
+                                <h4 class="card-info-title">Area</h4>
+                                <span>340m
+                                  <sup>2</sup>
+                                </span>
+                              </li>
+                              <li>
+                                <h4 class="card-info-title">Beds</h4>
+                                <span>2</span>
+                              </li>
+                              <li>
+                                <h4 class="card-info-title">Baths</h4>
+                                <span>4</span>
+                              </li>
+                              <li>
+                                <h4 class="card-info-title">Garages</h4>
+                                <span>1</span>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div><!-- End carousel item -->
+      
+                  <div class="carousel-item-b swiper-slide">
+                    <div class="card-box-a card-shadow">
+                      <div class="img-box-a">
+                        <img src="assets/img/DSC05276.JPG" alt="" class="img-a img-fluid">
+                      </div>
+                      <div class="card-overlay">
+                        <div class="card-overlay-a-content">
+                          <div class="card-header-a">
+                            <h2 class="card-title-a">
+                              <a href="property-single.html">204 Montal
+                                <br /> South Bela Two</a>
+                            </h2>
+                          </div>
+                          <div class="card-body-a">
+                            <div class="price-box d-flex">
+                              <span class="price-a">rent | $ 12.000</span>
+                            </div>
+                            <a href="property-single.html" class="link-a">Click here to view
+                              <span class="bi bi-chevron-right"></span>
+                            </a>
+                          </div>
+                          <div class="card-footer-a">
+                            <ul class="card-info d-flex justify-content-around">
+                              <li>
+                                <h4 class="card-info-title">Area</h4>
+                                <span>340m
+                                  <sup>2</sup>
+                                </span>
+                              </li>
+                              <li>
+                                <h4 class="card-info-title">Beds</h4>
+                                <span>2</span>
+                              </li>
+                              <li>
+                                <h4 class="card-info-title">Baths</h4>
+                                <span>4</span>
+                              </li>
+                              <li>
+                                <h4 class="card-info-title">Garages</h4>
+                                <span>1</span>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div><!-- End carousel item -->
+                </div>
+              </div>
+              <div class="propery-carousel-pagination carousel-pagination"></div>
+      
+            </div>
+          </section><!-- End Latest Properties Section -->
+        </div>
+        <div class="widget">
+          <h2 class="widget-title">Program</h2>
+          <section id="program">
+              <div class="program">
+                <a href="program.html"><img src="assets/img/Jak-B-Bertaqwa-keagamaan-360x325.png" alt="" class="lozad"></a>
+                <a href="program.html"><img src="assets/img/Jak-B-Cerdas-Pendidikan-360x325.png" alt="" class="lozad"></a>
+                <a href="program.html"><img src="assets/img/Jak-B-Sehat-Kesehatan-360x325.png" alt="" class="lozad"></a>
+                <a href="program.html"><img src="assets/img/Jak-B-Green-Lingkungan-360x325.png" alt="" class="lozad"></a>
+                <a href="program.html"><img src="assets/img/Jak-B-Berdaya-Ekonomi-360x325.png" alt="" class="lozad"></a>
+              </div>
+          </section>
+        </div>
         <!-- <h2>Galang Dana Terbaru</h2> -->
-        <h2>Mustahik, Muzakki</h2>
-        <h2>Galeri</h2>
-        <h2>Laporan</h2>
-        <h2>Kerjasama</h2>
-        <h2>Zakat Online</h2>
+        <div class="widget">
+          <section id="counts" class="counts section-bg">
+            <div class="container">
+              <div class="row counters">
+                <div class="col-lg-6 col-6 text-center">
+                  <span data-purecounter-start="0" data-purecounter-end="1232" data-purecounter-duration="1" class="purecounter"></span>
+                  <p>Mustahik</p>
+                </div>
+                <div class="col-lg-6 col-6 text-center">
+                  <span data-purecounter-start="0" data-purecounter-end="64" data-purecounter-duration="1" class="purecounter"></span>
+                  <p>Muzakki</p>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="widget">
+          <h2 class="widget-title">Galeri</h2>
+          <section id="portfolio" class="portfolio">
+            <div class="container">
+              <div class="row" data-aos="fade-up">
+                <div class="col-lg- d-flex justify-content-center">
+                  <ul id="portfolio-flters">
+                    <li data-filter=".filter-photo" class="filter-active">Foto</li>
+                    <li data-filter=".filter-video">Video</li>
+                  </ul>
+                  <a href="galeri.html">Lihat Semua > </a>
+                </div>
+              </div>
+      
+              <div class="row portfolio-container" data-aos="fade-up">
+      
+                <div class="col-lg-4 col-md-6 portfolio-item filter-photo">
+                  <img src="assets/img/DSC05194.JPG" class="img-fluid lozad" alt="">
+                  <div class="portfolio-info">
+                    <h4>App 1</h4>
+                    <p>App</p>
+                    <a href="assets/img/DSC05194.JPG" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 1"><i class="bx bx-plus"></i></a>
+                    <a href="galeri-detail.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+                  </div>
+                </div>
+      
+                <div class="col-lg-4 col-md-6 portfolio-item filter-video">
+                  <img src="assets/img/DSC05194.JPG" class="img-fluid lozad" alt="">
+                  <div class="portfolio-info">
+                    <h4>Web 3</h4>
+                    <script src="assets/vendor/aos/aos.js"></script>  
+                    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+                    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+                    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+                    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+                    <script src="assets/vendor/php-email-form/validate.js"></script>
+                    <p>Web</p>
+                    <a href="assets/img/DSC05194.JPG" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
+                    <a href="galeri-detail.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+                  </div>
+                </div>
+      
+                <div class="col-lg-4 col-md-6 portfolio-item filter-photo">
+                  <img src="assets/img/DSC05194.JPG" class="img-fluid lozad" alt="">
+                  <div class="portfolio-info">
+                    <h4>App 1</h4>
+                    <p>App</p>
+                    <a href="assets/img/DSC05194.JPG" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link lozad" title="App 1"><i class="bx bx-plus"></i></a>
+                    <a href="galeri-detail.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+                  </div>
+                </div>
+              </div>
+              <!-- End blog entries list -->
+            </div>
+          </section>
+        </div>
+        <div class="widget">
+          <h2 class="widget-title">Laporan</h2>
+          <section id="laporan">
+            <div class="laporan">
+              <table class="table table-hover">
+                <thead class="table-head">
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">First</th>
+                    <th scope="col">Last</th>
+                    <th scope="col">Handle</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td><a href="laporan.html">Mark</a></td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td colspan="2">Larry the Bird</td>
+                    <td>@twitter</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+        </div>
+        <div class="widget">
+          <h2 class="widget-title">Kerjasama</h2>
+          <section id="kerjasama">
+              <div class="kerjasama">
+                <center>
+                  <img src="assets/img/bank-mega-syariah.png" alt="">
+                  <img src="assets/img/izi.png" alt="">
+                  <img src="assets/img/ymai.png" alt="">
+                  <img src="assets/img/kitabisa.png" alt="">
+                  <img src="assets/img/pln.png" alt="">
+                  <img src="assets/img/kurmamedia.png" alt="">
+                </center>
+              </div>
+          </section>
+        </div>
+        <div class="widget">
+          <h2 class="widget-title">Zakat Online</h2>
+          <section id="zakat-online">
+            <div class="zakat">
+              <div class="row">
+                <div class="form-group mt-3">
+                    <label>Zakat Anda akan disalurkan untuk program-program yang telah disiapkan oleh Baznas Bazis DKI Jakarta</label>                  
+                </div>
+                <div class="input-group mt-3">
+                  <input type="text" class="form-control" >
+                  <div class="input-group-append">
+                    <button class="btn btn-warning" type="button">Zakat</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
     </div>
     
     <!-- Start Footer -->
@@ -472,7 +629,20 @@
     <!-- End Footer -->
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    
+    <script src="assets/vendor/purecounter/purecounter.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>  
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/carousel.js"></script>
+    <script src="assets/js/additional.js"></script>
+
+    
 
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
     <script>

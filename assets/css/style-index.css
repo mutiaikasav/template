@@ -1,0 +1,74 @@
+.widget {
+  margin: 50px 0;
+}
+
+.widget .widget-title {
+  border-left: 3px solid  #1d7b49;
+  padding: 0 0 0 1rem;
+  text-transform: uppercase;
+}
+
+.widget .program {
+  padding: 20px;
+}
+.widget .program img {
+  width: 200px;
+  height: auto;
+}
+.widget .counts {
+  padding: 30px 0;
+  background-color: #999;
+
+}
+.widget .counts .counters span {
+  font-size: 48px;
+  display: block;
+  color: #5fcf80;
+  font-weight: 700;
+}
+.widget .counts .counters p {
+  padding: 0;
+  margin: 0 0 20px 0;
+  font-size: 15px;
+  font-weight: 600;
+  color: #37423b;
+}
+.widget .laporan {
+  padding: 20px;
+}
+
+.widget  table .table-head th{
+  background-color: #1d7b49;
+  color: #fff;
+}
+.widget .galeri {
+  background-color: #999;
+  min-height: 200px;
+  padding: 75px;
+}
+.widget .kerjasama {
+  background-color: #999;
+  min-height: 200px;
+  padding: 75px;
+}
+
+.widget .kerjasama img {
+  height: 50px;
+  width: auto;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+.widget .kerjasama img:hover {
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
+}
+
+.widget .zakat {
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+  border: 0.0625rem solid rgba(0, 0, 0, 0.5);
+  border-radius: 0.5rem;
+  margin: 10px;
+}
