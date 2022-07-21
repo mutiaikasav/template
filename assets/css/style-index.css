@@ -1,3 +1,6 @@
+.bg-gradient {
+    background-image: linear-gradient(#fff, #1d7b49);
+}
 .widget {
   margin: 50px 0;
 }
@@ -16,14 +19,15 @@
   height: auto;
 }
 .widget .counts {
+  margin: 50px 0;
   padding: 30px 0;
-  background-color: #999;
+  background-color: #ffee97;
 
 }
 .widget .counts .counters span {
-  font-size: 48px;
+  font-size: 64px;
   display: block;
-  color: #5fcf80;
+  color: #000;
   font-weight: 700;
 }
 .widget .counts .counters p {
@@ -53,8 +57,10 @@
 }
 
 .widget .kerjasama img {
-  height: 50px;
+  max-width: 100%;
   width: auto;
+  max-height: 64px;
+  padding: 0px 5px 0 5px;
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
 }

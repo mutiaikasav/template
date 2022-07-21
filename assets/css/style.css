@@ -64,6 +64,25 @@ a {
 	background-repeat: no-repeat;
 	background-size:cover;
 }
+.bg-img-rad {
+	background-image: url("../../assets/img/header-img.jpg");
+	background-attachment: fixed;
+	background-position: bottom center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+	border: 0.0625rem solid rgba(0, 0, 0, 0.5);
+	border-radius: 0.5rem;
+}
+.bg-img-bw {
+	/* position: relative; */
+	background-image: url("../../assets/img/DSC05194.JPG");
+	background-attachment: fixed;
+	background-position: bottom center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+}
 .break-img{
 	display: block;
 	position: relative;

@@ -63,7 +63,6 @@ a:hover {
 .link-a {
   text-decoration: none;
   color: #ffffff;
-  text-decoration: none;
 }
 @media (min-width: 768px) {
   .link-a {
@@ -264,7 +263,8 @@ a:hover {
 
 /*------/ Title /------*/
 .title-wrap {
-  padding-bottom: 4rem;
+  padding-bottom: 2rem;
+  color: #034e2f;
 }
 
 .title-a {
@@ -1608,4 +1608,13 @@ a:hover {
   100% {
     transform: rotate(360deg);
   }
+}
+.btn-detail {
+  background-color: #ffd602;
+  color: #000000;
+  padding: 0.5rem 0.5rem;
+  border-radius: 50px;
+}
+.text-right {
+  text-align: right !important;
 }
