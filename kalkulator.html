@@ -20,6 +20,7 @@
     <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
 </head>
 <body>
+    <div class="bg-nav"></div>
     <!-- Start Navbar -->
     <nav class="navbar navbar-default navbar-trans navbar-expand-lg fixed-top" id="myNav">
         <div class="container">
@@ -136,20 +137,20 @@
                 <div class="justify-content-center">
                     <div class="kalkulator-nav">
                         <center>
-                            <button class="btn btn-primary">Zakat Penghasilan</button>
-                            <button class="btn btn-primary">Zakat Tabungan</button>
-                            <button class="btn btn-primary">Zakat Emas</button>
-                            <button class="btn btn-primary">Zakat Perdagangan</button>
-                            <button class="btn btn-primary">Zakat Pertanian</button>
-                            <button class="btn btn-primary">Zakat Harta</button>
-                            <button class="btn btn-primary">Zakat Fitrah</button>
+                            <button class="btn btn-primary" onclick="klik('penghasilan')">Zakat Penghasilan</button>
+                            <button class="btn btn-primary" onclick="klik('tabungan')">Zakat Tabungan</button>
+                            <button class="btn btn-primary" onclick="klik('emas')">Zakat Emas</button>
+                            <button class="btn btn-primary" onclick="klik('perdagangan')">Zakat Perdagangan</button>
+                            <button class="btn btn-primary" onclick="klik('pertanian')">Zakat Pertanian</button>
+                            <button class="btn btn-primary" onclick="klik('harta')">Zakat Harta</button>
+                            <button class="btn btn-primary" onclick="klik('fitah')">Zakat Fitrah</button>
                         </center>
                     </div>
                 </div>
                 <div class="row justify-content-center">
                     <div class="col-lg-12">
                         <div class="kalkulator">
-                            <form action="" class="form-group" id="penghasilan">
+                            <form action="" class="form-group" id="penghasilan" style="display: block;">
                                 <div class="mt-3 row">
                                     <div class="col-lg-6">
                                         <label for="penghasilanperbulan">Penghasilan per Bulan</label>
@@ -195,7 +196,7 @@
                                 </div>
                             </form>
 
-                            <form action="" class="form-group" id="tabungan">
+                            <form action="" class="form-group" id="tabungan" style="display: none;">
                                 <div class="mt-3 row">
                                     <div class="col-lg-6">
                                         <label for="penghasilanperbulan">Saldo Tabungan</label>
@@ -233,7 +234,7 @@
                                 </div>
                             </form>
 
-                            <form action="" class="form-group" id="emas">
+                            <form action="" class="form-group" id="emas" style="display: none;">
                                 <div class="mt-3 row">
                                     <div class="col-lg-6">
                                         <label for="penghasilanperbulan">Jumlah Emas</label>
@@ -263,7 +264,7 @@
                                 </div>
                             </form>
 
-                            <form action="" class="form-group" id="perdagangan">
+                            <form action="" class="form-group" id="perdagangan" style="display: none;">
                                 <div class="mt-3 row">
                                     <div class="col-lg-6">
                                         <label for="penghasilanperbulan">Modal yang Diputar selama 1 tahun</label>
@@ -317,7 +318,7 @@
                                 </div>
                             </form>
 
-                            <form action="" class="form-group" id="pertanian">
+                            <form action="" class="form-group" id="pertanian" style="display: none;">
                                 <div class="mt-3 row">
                                     <div class="col-lg-6">
                                         <label for="penghasilanperbulan">Hasil Panen (kg)</label>
@@ -355,7 +356,7 @@
                                 </div>
                             </form>
 
-                            <form action="" class="form-group" id="harta">
+                            <form action="" class="form-group" id="harta" style="display: none;">
                                 <div class="mt-3 row">
                                     <div class="col-lg-6">
                                         <label for="penghasilanperbulan">Nilai emas, perak, dan/atau permata</label>
@@ -409,7 +410,7 @@
                                 </div>
                             </form>
 
-                            <form action="" class="form-group" id="pertanian">
+                            <form action="" class="form-group" id="pertanian" style="display: none;">
                                 <div class="mt-3 row">
                                     <div class="col-lg-6">
                                         <label for="penghasilanperbulan">Jumlah Orang</label>
@@ -510,6 +511,66 @@
     <script>
         const observer = lozad(); // lazy loads elements with default selector as '.lozad'
         observer.observe();
+
+        function klik(params) {
+            if (params == 'tabungan') {
+                document.getElementById('penghasilan').style.display= "none"
+                document.getElementById('tabungan').style.display = "block"
+                document.getElementById('emas').style.display = "none"
+                document.getElementById('perdagangan').style.display = "none"
+                document.getElementById('pertanian').style.display = "none"
+                document.getElementById('harta').style.display = "none"
+                document.getElementById('fitrah').style.display = "none"
+            } else if(params == 'emas') {
+                document.getElementById('penghasilan').style.display= "none"
+                document.getElementById('tabungan').style.display = "none"
+                document.getElementById('emas').style.display = "block"
+                document.getElementById('perdagangan').style.display = "none"
+                document.getElementById('pertanian').style.display = "none"
+                document.getElementById('harta').style.display = "none"
+                document.getElementById('fitrah').style.display = "none"
+            } else if(params == 'perdagangan') {
+                document.getElementById('penghasilan').style.display= "none"
+                document.getElementById('tabungan').style.display = "none"
+                document.getElementById('emas').style.display = "none"
+                document.getElementById('perdagangan').style.display = "block"
+                document.getElementById('pertanian').style.display = "none"
+                document.getElementById('harta').style.display = "none"
+                document.getElementById('fitrah').style.display = "none"
+            } else if(params == 'pertanian') {
+                document.getElementById('penghasilan').style.display= "none"
+                document.getElementById('tabungan').style.display = "none"
+                document.getElementById('emas').style.display = "none"
+                document.getElementById('perdagangan').style.display = "none"
+                document.getElementById('pertanian').style.display = "block"
+                document.getElementById('harta').style.display = "none"
+                document.getElementById('fitrah').style.display = "none"
+            } else if(params == 'harta') {
+                document.getElementById('penghasilan').style.display= "none"
+                document.getElementById('tabungan').style.display = "none"
+                document.getElementById('emas').style.display = "none"
+                document.getElementById('perdagangan').style.display = "none"
+                document.getElementById('pertanian').style.display = "none"
+                document.getElementById('harta').style.display = "block"
+                document.getElementById('fitrah').style.display = "none"
+            } else if(params == 'fitrah') {
+                document.getElementById('penghasilan').style.display= "none"
+                document.getElementById('tabungan').style.display = "none"
+                document.getElementById('emas').style.display = "none"
+                document.getElementById('perdagangan').style.display = "none"
+                document.getElementById('pertanian').style.display = "none"
+                document.getElementById('harta').style.display = "none"
+                document.getElementById('fitrah').style.display = "block"
+            } else {
+                document.getElementById('penghasilan').style.display= "block"
+                document.getElementById('tabungan').style.display = "none"
+                document.getElementById('emas').style.display = "none"
+                document.getElementById('perdagangan').style.display = "none"
+                document.getElementById('pertanian').style.display = "none"
+                document.getElementById('harta').style.display = "none"
+                document.getElementById('fitrah').style.display = "none"
+            }
+        }
     </script>
 </body>
 </html>

@@ -57,7 +57,13 @@ a {
 	background-size:cover;
 	opacity: 95%;
 }
-
+.bg-img {
+	background-image: url("../../assets/img/header-img.jpg");
+	background-attachment: fixed;
+	background-position: bottom center;
+	background-repeat: no-repeat;
+	background-size:cover;
+}
 .break-img{
 	display: block;
 	position: relative;

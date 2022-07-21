@@ -20,6 +20,7 @@
     <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
 </head>
 <body>
+    <div class="bg-nav"></div>
     <!-- Start Navbar -->
     <nav class="navbar navbar-default navbar-trans navbar-expand-lg fixed-top" id="myNav">
         <div class="container">
@@ -142,29 +143,30 @@
                                 <table class="table table-hover">
                                     <thead>
                                       <tr>
-                                        <th scope="col">#</th>
-                                        <th scope="col">First</th>
-                                        <th scope="col">Last</th>
-                                        <th scope="col">Handle</th>
+                                        <th scope="col">No</th>
+                                        <th scope="col">Bank</th>
+                                        <th scope="col">No Rekening</th>
+                                        <th scope="col"></th>
                                       </tr>
                                     </thead>
                                     <tbody>
                                       <tr>
                                         <th scope="row">1</th>
-                                        <td>Mark</td>
-                                        <td>Otto</td>
-                                        <td>@mdo</td>
+                                        <td>Bank DKI</td>
+                                        <td id="1">70270030011</td>
+                                        <td><button onclick="copy('1')" class="btn btn-sm"><i class="bi bi-clipboard"></i></button></td>
                                       </tr>
                                       <tr>
                                         <th scope="row">2</th>
-                                        <td>Jacob</td>
-                                        <td>Thornton</td>
-                                        <td>@fat</td>
+                                        <td>Bank DKI</td>
+                                        <td id="1">70270030011</td>
+                                        <td><button onclick="copy('1')" class="btn btn-sm"><i class="bi bi-clipboard"></i></button></td>
                                       </tr>
                                       <tr>
                                         <th scope="row">3</th>
-                                        <td colspan="2">Larry the Bird</td>
-                                        <td>@twitter</td>
+                                        <td>Bank DKI</td>
+                                        <td id="1">70270030011</td>
+                                        <td><button onclick="copy('1')" class="btn btn-sm"><i class="bi bi-clipboard"></i></button></td>
                                       </tr>
                                     </tbody>
                                   </table>
@@ -250,6 +252,21 @@
     <script>
         const observer = lozad(); // lazy loads elements with default selector as '.lozad'
         observer.observe();
+        function copy(param) {
+          /* Get the text field */
+          var copyText = document.getElementById(param);
+          console.log(copyText)
+
+          // /* Select the text field */
+          copyText.select();
+          copyText.setSelectionRange(0, 99999); /* For mobile devices */
+
+          // /* Copy the text inside the text field */
+          navigator.clipboard.writeText(copyText.value);
+          
+          // /* Alert the copied text */
+          alert("Copied the text: " + copyText.value);
+        }
     </script>
 </body>
 </html>
