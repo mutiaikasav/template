@@ -19,7 +19,7 @@
     <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.12.1/datatables.min.css"/>
 </head>
-<body>
+<body class="bg-img">
     <!-- Start Navbar -->
     <nav class="navbar navbar-default navbar-trans navbar-expand-lg fixed-top" id="myNav">
         <div class="container">
@@ -131,27 +131,25 @@
                                     <img src="assets/img/user.png" alt="" class="rounded-circle lozad">
                                 </center>
                             </div>
-                            <div class="row col-lg-4 py-4">
-                                <div class="col-lg-12 ">
+                            <div class="row col-lg-4">
+                                <div class="col-lg-4">
                                     <center>
-                                        <button class="btn btn-primary">Profil</button>
-                                        <button class="btn btn-primary">Transaksi</button>
-                                        <button class="btn btn-primary">Donasi</button>
-                                    </center>
-                                </div>
-                                <!-- <div class="col-lg-4">
-                                    <center>
-        
+                                        <button class="btn btn-primary" onclick="klik('profil')">Profil</button>
                                     </center>
                                 </div>
                                 <div class="col-lg-4">
                                     <center>
-        
+                                        <button class="btn btn-primary" onclick="klik('transaksi')">Transaksi</button>
                                     </center>
-                                </div> -->
+                                </div>
+                                <div class="col-lg-4">
+                                    <center>
+                                        <button class="btn btn-primary" onclick="klik('donasi')">Donasi</button>
+                                    </center>
+                                </div>
                             </div>
                         </div>
-                        <div class="profile-tab" id="profile">
+                        <div class="profile-tab" id="profil" style="display: block;">
                             <div class="row col-lg-12">
                                 <div class="row pt-3">
                                     <div class="col-lg-4">
@@ -206,7 +204,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="profile-tab" id="transaksi">
+                        <div class="profile-tab" id="transaksi" style="display: none;">
                             <div class="row col-lg-12">
                                 <h4>Transaksi</h4>
                                 <br>
@@ -230,7 +228,7 @@
                                 </table>
                             </div>
                         </div>
-                        <div class="profile-tab" id="donasi">
+                        <div class="profile-tab" id="donasi" style="display: none;">
                             <div class="row col-lg-12">
                                 <h4>Donasi</h4>
                                 <br>
@@ -341,6 +339,28 @@
         } );
         const observer = lozad(); // lazy loads elements with default selector as '.lozad'
         observer.observe();
+
+        function klik(params) {
+            if (params == 'transaksi') {
+                document.getElementById('transaksi').style.display= "block"
+                document.getElementById('profil').style.display = "none"
+                document.getElementById('donasi').style.display = "none"
+                console.log('a')
+            } else if(params == 'donasi') {
+                document.getElementById('transaksi').style.display = "none"
+                document.getElementById('profil').style.display = "none"
+                document.getElementById('donasi').style.display= "block"
+                console.log('b')
+            } else {
+                document.getElementById('transaksi').style.display = "none"
+                document.getElementById('profil').style.display= "block"
+                document.getElementById('donasi').style.display = "none"
+                console.log('c')
+            }
+        }
+        function myFunction() {
+            document.getElementById("demo").innerHTML = "Hello World";
+        }
     </script>
 </body>
 </html>
