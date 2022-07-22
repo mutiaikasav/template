@@ -1,5 +1,6 @@
-.bg-gradient {
-    background-image: linear-gradient(#fff, #1d7b49);
+#bg-gradient {
+    background: linear-gradient(#fff, #1d7b49);
+    min-height: 200px;
 }
 .widget {
   margin: 50px 0;

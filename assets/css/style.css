@@ -57,6 +57,10 @@ a {
 	background-size:cover;
 	opacity: 95%;
 }
+.bg-nav-white {
+	min-height: 100px;
+    background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0));
+}
 .bg-img {
 	background-image: url("../../assets/img/header-img.jpg");
 	background-attachment: fixed;
@@ -76,7 +80,7 @@ a {
 }
 .bg-img-bw {
 	/* position: relative; */
-	background-image: url("../../assets/img/DSC05194.JPG");
+	background-image: url("../../assets/img/bg-bw.jpg");
 	background-attachment: fixed;
 	background-position: bottom center;
 	background-repeat: no-repeat;
