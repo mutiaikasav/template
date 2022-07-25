@@ -45,7 +45,18 @@
     display: flex;
     margin: 150px 10px 10px 10px;
 }
-
+.next {
+  padding: 0 20px ;
+}
+@media (max-width: 767px) {
+  .bayarzis {
+    display: block;
+    margin: 100px 0 50px;
+  }
+  .next {
+    padding: 20px 0;
+  }
+}
 .bayarzis .table-head {
   background-color: #034e2f;
   color: #fff;
