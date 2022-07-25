@@ -47,7 +47,12 @@ table {
 a {
     text-decoration: none;
 }
-
+.color-white {
+	color: white;
+}
+.color-white:hover {
+	color: white;
+}
 .bg-nav {
 	min-height: 250px;
 	background-image: url("../../assets/img/header-img.jpg");
