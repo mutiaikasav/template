@@ -66,6 +66,12 @@ a {
 	min-height: 100px;
     background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0));
 }
+@media (max-width: 767px) {
+	.bg-nav-white {
+		min-height: 80px;
+	}
+}
+
 .bg-img {
 	background-image: url("../../assets/img/header-img.jpg");
 	background-attachment: fixed;
