@@ -80,6 +80,11 @@
   height: 100vh;
   position: absolute;
 }
+@media (max-width: 767px) {
+	.banner-kurban  {
+    margin: 80px 0 100px 0;
+	}
+}
 .banner-kurban img {
   width: 100%;
 }
@@ -88,12 +93,22 @@
   padding: 20px;
   margin: 120vh 10px 10px 10px;
 }
+@media (max-width: 767px) {
+	.widget .kurban {
+    margin: 30vh 10px 10px 10px;
+	}
+}
 .widget .kurban .kurban-box {
   background-color: #fff;
   padding: 20px;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
   border: 0.0625rem solid rgba(0, 0, 0, 0.5);
   border-radius: 0.5rem;
+}
+@media (max-width: 767px) {
+	.widget .kurban .kurban-box {
+    margin-bottom: 10px;
+	}
 }
 .widget .kurban .kurban-box img {
   width: 100%;
