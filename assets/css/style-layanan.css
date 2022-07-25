@@ -65,6 +65,14 @@
 .bayarzis ol li {
   list-style: none;
 }
+.bayarzis .btn-zis {
+  border:1px solid transparent;
+  color: #000;
+  margin: 5px;
+}
+.bayarzis .btn-zis.active {
+  background-color: #ffd602;
+}
 
 .banner-kurban {
   margin: 100px 0 100px 0;
