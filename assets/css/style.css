@@ -48,10 +48,10 @@ a {
     text-decoration: none;
 }
 .color-white {
-	color: white;
+	color: #fff;
 }
 .color-white:hover {
-	color: white;
+	color: #fff;
 }
 .bg-nav {
 	min-height: 250px;
@@ -98,6 +98,12 @@ a {
 	background-size: cover;
 	width: 100%;
 }
+.bg-glass {
+	padding: 20px;
+	background-color: rgba(255,255,255,0.3);
+  	backdrop-filter: blur(12px);
+}
+
 .break-img {
 	display: block;
 	position: relative;
