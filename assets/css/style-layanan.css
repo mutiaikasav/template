@@ -22,6 +22,13 @@
 }
 .kalkulator-nav button{
   background-color: #034e2f;
+  border:1px solid transparent;
+  color: #fff;
+  margin: 5px;
+}
+.kalkulator-nav button:hover{
+  background-color: #ffd602;
+  color: #000;
 }
 @media(max-width: 768px) {
   .kalkulator-nav{
