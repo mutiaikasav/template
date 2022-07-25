@@ -83,6 +83,7 @@
   .widget .kerjasama img {
     max-width: 75%;
     max-height: 64px;
+    padding: 0 0 5px 0;
   }
 }
 .widget .kerjasama img:hover {
