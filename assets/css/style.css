@@ -98,13 +98,18 @@ a {
 	background-size: cover;
 	width: 100%;
 }
-.break-img{
+.break-img {
 	display: block;
 	position: relative;
 	width: 100%;
 	max-height: 250px;
 	overflow: hidden;
 	margin-top: 90px;
+}
+@media (max-width: 767px) {
+	.break-img {
+		max-height: 150px;
+	}
 }
 .break-img img {
     display: block;

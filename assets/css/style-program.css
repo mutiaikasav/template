@@ -38,10 +38,7 @@
   color: #fff;
   content: "/";
 }
-@media (max-width: 991px) {
-  .breadcrumbs {
-    margin-top: 58px;
-  }
+@media (max-width: 991px) {  
   .breadcrumbs .d-flex {
     display: block !important;
   }
