@@ -1944,6 +1944,8 @@ body {
 }
 .contact .info {
   background: #fff;
+  display: block;
+  height: fit-content;
 }
 .contact .info i {
   font-size: 20px;
