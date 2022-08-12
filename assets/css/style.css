@@ -172,6 +172,9 @@ body {
 .color-white:hover {
 	color: #fff;
 }
+.color-yellow {
+	color: #ffd602;
+}
 .bg-nav {
 	min-height: 250px;
 	background-image: url("../../assets/img/header-img.jpg");
@@ -754,6 +757,15 @@ body {
 	  font-size: 15px;
 	}
   }
+  @media(max-width: 760px)
+  {
+    #hero .carousel-inner .carousel-item{
+      max-height: max-content;
+    }
+    #hero .carousel-inner .carousel-container{
+      display: none;
+    }
+  }
   @media (max-height: 500px) {
 	#hero {
 	  height: 120vh;
@@ -864,7 +876,12 @@ body {
   border-radius: 0.5rem;
   margin: 10px;
 }
-
+@media (min-width: 992px)
+{
+  .widget .zakat {
+    width: 75%;
+  }
+}
 :root {
     --color: #034e2f;
     --transition-time: 0.5s;
@@ -2178,6 +2195,12 @@ body {
     border-radius: 0.5rem;
     display: flex;
     margin: 10px;
+  }
+  @media (min-width: 992px)
+  {
+    .konfirmasi {
+      width: 100%;
+    }
   }
 
   .kalkulator {    
